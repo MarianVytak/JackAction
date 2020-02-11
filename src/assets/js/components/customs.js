@@ -4,7 +4,7 @@ $(function () {
 
 
 
-    $('.slider__list').slick({
+    $('.section-2__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
@@ -35,6 +35,17 @@ $(function () {
         dots: true,
         appendArrows: $('.section-4__slider_arrows'),
         appendDots: $('.section-4__slider_dots')
+    });
+
+    $('.section-5__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        focusOnSelect: true,
+        fade: true,
+        arrows: false,
+        dots: true,
+        appendDots: $('.section-5__slider_dots')
     });
 
 
