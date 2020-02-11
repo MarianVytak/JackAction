@@ -4,7 +4,7 @@ $(function () {
 
 
 
-    $('.slider__container').slick({
+    $('.slider__list').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
@@ -12,7 +12,7 @@ $(function () {
         fade: true,
         arrows: false,
         dots: true,
-        appendDots: $('.slider__dots')
+        appendDots: $('.section-2__slider_dots')
     });
 
     $('.section-3__slider').slick({
@@ -23,6 +23,18 @@ $(function () {
         fade: false,
         arrows: true,
         dots: false
+    });
+
+    $('.section-4__slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        focusOnSelect: true,
+        fade: false,
+        arrows: true,
+        dots: true,
+        appendArrows: $('.section-4__slider_arrows'),
+        appendDots: $('.section-4__slider_dots')
     });
 
 
