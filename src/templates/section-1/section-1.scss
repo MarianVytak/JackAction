@@ -1,0 +1,57 @@
+.intro {
+  position: relative;
+  display: flex;
+}
+
+.intro__block {
+  position: absolute;
+  top: 0;
+  left: 27.6em;
+  width: 39.8em;
+  height: 100%;
+  background-color: rgba($main, .5);
+}
+
+.intro__block_logo {
+  position: absolute;
+  bottom: 20em;
+  right: -5em;
+  width: 30em;
+}
+
+.intro__block_text {
+  position: absolute;
+  right: 0;
+  bottom: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26em;
+  height: 5em;
+  background-color: $white;
+  span {
+    font-size: 2.5em;
+    color: $black;
+    text-transform: uppercase;
+  }
+}
+
+.intro__block_text_line {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  width: 5.5em;
+  height: 5em;
+  background-color: rgba($main, .5);
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 4.6em;
+    height: 0.2em;
+    background-color: $white;
+  }
+}
