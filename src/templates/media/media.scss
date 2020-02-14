@@ -1,0 +1,131 @@
+@media (max-width: 767.98px) {
+  body {
+    font-size: 5px;
+  }
+  .js-anchor {
+    display: none;
+  }
+  .container {
+    padding: 0;
+  }
+  .content-desktop {
+    display: none;
+  }
+  .content-mobile {
+    display: flex;
+  }
+  .form-group {
+    max-width: none;
+    width: 100%;
+    margin-right: 0;
+  }
+  .header {
+    padding-right: 2em;
+    top: 1em;
+  }
+  .intro__block {
+    left: 0;
+    width: 26em;
+  }
+  .intro__block_logo {
+    bottom: 6em;
+  }
+  .intro__block_text {
+    bottom: 0;
+  }
+  .slider {
+    grid-template-columns: minmax(0, 1fr);
+    -ms-grid-columns: minmax(0, 1fr);
+  }
+  .slider__dots {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    padding: 1em 0;
+    .slick-dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li {
+        width: auto;
+      }
+    }
+  }
+  .slick-prev {
+    font-size: 5px;
+    left: -1em;
+  }
+  .slick-next {
+    font-size: 5px;
+    right: -1em;
+  }
+  .slider__container {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+  }
+  .slider__item {
+    grid-template-columns: minmax(0, 1fr);
+    -ms-grid-columns: minmax(0, 1fr);
+  }
+  .slider__left {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+  }
+  .slider__right {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+  }
+  .slider__img {
+    height: auto;
+    img {
+      position: inherit;
+      top: auto;
+      left: auto;
+      transform: none;
+    }
+  }
+  .section-3 {
+    padding: 2em 4em;
+  }
+  .section-3__slider {
+    padding: 0 4em;
+  }
+  .section-4__slider_item {
+    display: inline-block !important;
+    height: 400px;
+    img {
+      width: 100%;
+      max-width: none;
+      height: auto;
+      max-height: none;
+    }
+  }
+  .section-4__slider_arrows {
+    display: none;
+  }
+  .section-5 {
+    .slider__left {
+      grid-row: 2;
+      -ms-grid-row: 2;
+    }
+    .slider__right {
+      grid-row: 1;
+      -ms-grid-row: 1;
+    }
+  }
+  .footer {
+    padding: 4em;
+  }
+  .footer__block {
+    grid-template-columns: minmax(0, 1fr);
+    -ms-grid-columns: minmax(0, 1fr);
+  }
+  .footer__left {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+  }
+  .footer__right {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+    margin-top: 4em;
+  }
+}

@@ -4,6 +4,16 @@ $(function () {
 
 
 
+    // Плавние якоря.
+    $('.js-anchor a').on('click', function(e){
+        e.preventDefault();
+        var navScroll = $(this).attr('href'),
+            navScrollBlock = $(navScroll).offset().top;
+        $('html, body').animate({
+            scrollTop: navScrollBlock
+        }, 500);
+    });
+
     $('.section-2__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -22,7 +32,15 @@ $(function () {
         focusOnSelect: true,
         fade: false,
         arrows: true,
-        dots: false
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 
     $('.section-4__slider').slick({
@@ -34,7 +52,15 @@ $(function () {
         arrows: true,
         dots: true,
         appendArrows: $('.section-4__slider_arrows'),
-        appendDots: $('.section-4__slider_dots')
+        appendDots: $('.section-4__slider_dots'),
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 
     $('.section-5__slider').slick({

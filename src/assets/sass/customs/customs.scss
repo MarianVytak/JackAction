@@ -18,3 +18,19 @@ body {
   padding: 0 14em;
   box-sizing: border-box;
 }
+
+.content-desktop {
+  display: flex;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+.content-mobile {
+  display: none;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
