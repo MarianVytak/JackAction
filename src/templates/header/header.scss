@@ -3,8 +3,18 @@
   top: 4em;
   right: 0;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
   padding-right: 13.5em;
   z-index: 2;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .header__navigation {
@@ -15,12 +25,44 @@
 
 .header__navigation_item {
   margin-right: 2em;
+}
+
+.header__navigation_item_link {
+  font-size: 3em;
+  color: $white;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0.05em;
+    background-color: $white;
+    transition: .3s;
+  }
+  &:hover {
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.language__item {
+  margin-right: 2em;
   &:last-child {
     margin-right: 0;
   }
 }
 
-.header__navigation_item_link {
+.language__item_link {
   font-size: 3em;
   color: $white;
   position: relative;

@@ -4,10 +4,18 @@ $(function () {
 
 
 
+    // Hamburger
+    const hamburger = $('.hamburger');
+    const menu = $('.header__navigation');
+    hamburger.on('click', function(){
+        hamburger.toggleClass('hamburger-active');
+        menu.slideToggle();
+    });
+
     // Плавние якоря.
-    $('.js-anchor a').on('click', function(e){
+    $('.header__navigation_item_link').on('click', function(e){
         e.preventDefault();
-        var navScroll = $(this).attr('href'),
+        let navScroll = $(this).attr('href'),
             navScrollBlock = $(navScroll).offset().top;
         $('html, body').animate({
             scrollTop: navScrollBlock

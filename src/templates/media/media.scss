@@ -1,9 +1,15 @@
+@media (min-width: 768px) {
+  .header__navigation {
+    display: flex !important;
+  }
+}
+
 @media (max-width: 767.98px) {
   body {
     font-size: 5px;
   }
-  .js-anchor {
-    display: none;
+  .hamburger {
+    display: block;
   }
   .container {
     padding: 0;
@@ -20,8 +26,24 @@
     margin-right: 0;
   }
   .header {
-    padding-right: 2em;
+    justify-content: space-between;
+    padding: 0 2em;
     top: 1em;
+  }
+  .header__navigation {
+    display: none;
+    position: absolute;
+    top: 10em;
+    left: 2em;
+  }
+  .header__navigation_item {
+    margin-right: 0;
+    margin-bottom: 2em;
+  }
+  .header__navigation_item_link {
+    &:before {
+      display: none;
+    }
   }
   .intro__block {
     left: 0;
